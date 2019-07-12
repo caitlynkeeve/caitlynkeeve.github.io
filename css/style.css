@@ -119,26 +119,44 @@ nav.pinned {
     margin: 15px auto;
     
  }
+.post {
+  width: 300px;
+  height: 300px;
+  background: url("https://www.msmu.edu/media/website/content-assets/msmuedu/home/status-of-women-and-girls-in-california/images/collectif/keeves.png");
+  margin: 5% auto 0 auto;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .overlay {
-  display: none;
-  position: absolute;
-  color: #fff;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(41, 42, 44, 0.5);
-  justify-content: center;
-  align-items: center;
+  display: block;
+  background: rgba(63, 63, 63, 0.8);
+  text-align: center;
+  padding: 20px 0 203px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
 }
 
-.img-overlay {
-  position: relative;
-  display: inline-block;
+.post:hover .overlay {
+  visibility: visible;
+  opacity: 1;
 }
 
-.img-overlay:hover .overlay {
-  display: flex;
+.overlay a,
+.overlay p {
+  color: #47f197;
+  font-size: 18px;
+  font-family: Helvetica;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.overlay p {
+  margin-top: -5px;
+  margin-bottom: 230px;
+}
 }
 
 /* Experience
