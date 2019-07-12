@@ -209,4 +209,30 @@ nav.pinned {
     .hero h1 {
         padding-top: 28rem;
     }
+    .img-overlay img {
+  position: relative;
+  vertical-align: top;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(41, 42, 44, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.img-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.img-overlay:hover .overlay {
+  display: flex;
+}
 }
