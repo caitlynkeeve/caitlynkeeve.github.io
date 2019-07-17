@@ -123,12 +123,12 @@ nav.pinned {
 /* Main container */
 .overlay-image {
  position: relative;
- width: 100%;
+ width: 50%;
 }
 /* Original image */
 .overlay-image .image {
  display: block;
- width: 100%;
+ width: 50%;
  height: 100px;
 }
 /* Original text overlay */
